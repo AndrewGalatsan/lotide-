@@ -25,3 +25,6 @@ const ab = { a: "4", b: "2"};
 const ba = { b: "2", a: "1"};
 console.log(assertObjectsEqual(eqObjects(ab,ba),false));
 
+// Update 2
+
+
