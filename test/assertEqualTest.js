@@ -1,4 +1,13 @@
+const assert = require('chai').assert;
 const assertEqual = require('../assertEqual');
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 2);
+
+
+describe("Checking if the inserted is equal to the expected", () => {
+  it("returns assertion failed'", () => {
+    assert.strictEqual(assertEqual("Lighthouse Labs", "Bootcamp"));
+  });
+  it("returns assertion failed", () => {
+    assert.strictEqual(assertEqual(1, 2)); 
+  });
+});
+
