@@ -11,6 +11,4 @@ if (actual === expected){
 // If equal, it console logs the string that says assertion as passed, noting the actual and expected value. Otherwise it console logs a failure.
 // THe below two tests should provide a 'fail' because they are not equal.
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 2);
+module.exports = assertEqual
