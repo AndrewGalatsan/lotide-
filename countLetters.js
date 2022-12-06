@@ -1,4 +1,4 @@
-const assertEqual = require('../assertEqual');
+const assertEqual = require('./assertEqual');
 
   const countLetters = (obj) => {
     obj = obj.replace(/\s+/g, "");
@@ -35,4 +35,3 @@ const assertEqual = require('../assertEqual');
   console.log(countLetters("lighthouse in the house"));
 
   module.exports = countLetters;
-  

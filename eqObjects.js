@@ -3,6 +3,7 @@
 // built in method to check if there is an array in the object of obect1 and object2. Then if the values in the array of object1 and object2 are not the same,
 // (symbolized by the !eqArrays function), a boolean of false is returned, otherwise it returns true.
 // The console logged test below should return true.
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2){
   if (Object.keys(object1).length === Object.keys(object2).length){

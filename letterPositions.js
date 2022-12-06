@@ -4,6 +4,7 @@
 // the character in it, add 1 to it, otherwise equal it to 1. We then return the object that we have created. 
 // What the output does is provide a new object with keys which are equal to the characters in the inputted string, and has an associated counted value with it.
 
+const countLetters = require('./countLetters');
 
 function letterPositions (input) {
   const obj = {}; 
