@@ -19,9 +19,6 @@ const eqObjects = function(object1, object2){
 return false;    
 };
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc));
 
 module.exports = eqObjects;
 
