@@ -4,4 +4,4 @@ let head = function(arr){
 
 // What the head function simply does is take in an array as a parameter and returns the first value of that array (index of 0) 
 
-module.exports = head
+module.exports = head;

@@ -11,7 +11,7 @@ const middle = function(array) {
     }
     return newArr;  
   }
-console.log(middle([1,2,3]))
+
 module.exports = middle
 
   // The middle function takes in an array as a parameter and here we create a new empty array. For a condition, if the array length is less than or equal to 2

@@ -1,25 +1,3 @@
-const eqArrays = function(arr1,arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1,arr2){
-  const result = eqArrays(arr1,arr2)
-    if (!result){
-        console.log(`BOO These arrays are NOT equal`)
-    }
-    else {
-        console.log(` YAY These arrays ARE equal`)
-    }
-}
-
 // What the countLetters function does is take in an input as a parameter and here below we are also creating an empty object. We start off by defining a 
 // variable by making it equivalent to the parameter and having it split by space. Then we run a for let loop in the parameter and define the character as
 // the splitted letters from the parameter. From there we have a condition that says if that character does not have a space, for the new object we created 
@@ -27,7 +5,7 @@ const assertArraysEqual = function(arr1,arr2){
 // What the output does is provide a new object with keys which are equal to the characters in the inputted string, and has an associated counted value with it.
 
 
-function countLetters (input) {
+function letterPositions (input) {
   const obj = {}; 
   const letter = input.split('');
   for (let i = 0; i < input.length; i++) {
@@ -45,4 +23,7 @@ function countLetters (input) {
     }
 
 console.log(countLetters("lighthouse in the house"));
+
+module.exports = letterPositions;
+
 
