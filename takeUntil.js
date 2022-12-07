@@ -27,4 +27,4 @@ console.log(results2);
 
 // a function that is passed into another function as an argument - callback function
 
-module.exports = takeUntil
+module.exports = takeUntil;

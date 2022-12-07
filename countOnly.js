@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
@@ -22,27 +20,6 @@ for (const item of allItems) {
 // says, if there is an identified indexed value under 'itemsToCount', take that indexed value and add 1 to it, within the results array. Otherwise
 // keep the value at 1. Then we return the new object 'results'.
 
-
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-console.log(result1)
-
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
 
 module.exports = countOnly;
 
